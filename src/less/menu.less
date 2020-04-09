@@ -1,0 +1,135 @@
+
+
+.menu__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.menu__header-search {
+  margin-right: 30px;
+}
+
+.menu__header-logo {
+  margin-right: 25px;
+}
+
+.menu__main {
+  height: 60px;
+  margin-bottom: 30px;
+
+  background-color: #efefef;
+}
+
+.menu__main-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.menu__main-right {
+  flex-grow: 1;
+
+}
+
+.menu__main-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 10px;
+
+
+  list-style: none;
+}
+
+
+.menu__main-left {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 263px;
+  height: 60px;
+  margin-right: 30px;
+
+  font-family: @fontSemiBold;
+  font-size: 18px;
+  color: #ffffff;
+
+  background-image: linear-gradient(to right, #33b9e9, #088ec7);
+
+  border-radius: 3px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+
+    display: block;
+    content: "";
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #ffffff;
+    box-shadow:
+            0 8px 0 0 #ffffff,
+            0 -8px 0 0 #ffffff;
+  }
+  &::after {
+    position: absolute;
+    right: 20px;
+    transform: rotate(45deg);
+
+    display: block;
+    content: "";
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+
+    border: 2px solid #ffffff;
+    border-top: none;
+    border-left: none;
+
+    opacity: 0.3;
+  }
+}
+
+.menu__main-link {
+  position: relative;
+
+  display: block;
+
+  font-family: @fontBold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: #000000;
+
+  &:hover {
+
+    color: #009ee2;
+  }
+
+  &::after {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    display: none;
+    content: "";
+
+    border: 9px solid #ffffff;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  &:hover::after {
+    display: block;
+  }
+}
+

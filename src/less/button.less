@@ -1,0 +1,72 @@
+
+
+.button {
+  box-sizing: border-box;
+  width: 174px;
+  height: 54px;
+
+  font-family: @fontBold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 3.2px;
+
+  border-radius: 3px;
+
+  background-color: #1d1e1e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--blue {
+    width: 225px;
+
+    background-image: linear-gradient(to right, #32b8e9, #088ec7);
+
+  }
+  &--send-email {
+    width: 262px;
+    height: 58px;
+
+    background-image: linear-gradient(to right, #32b8e9, #088ec7);
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+  }
+}
+
+.button--blue:hover {
+  background-image: none;
+  background-color: #009ee2;
+}
+
+
+
+.button-toggle__input {
+  display: none;
+
+}
+
+.button-toggle__label {
+  display: block;
+  box-sizing: border-box;
+  width: 11px;
+  height: 11px;
+  margin-right: 20px;
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.button-toggle__input:checked + .button-toggle__label {
+  border-color: #3dc3f2;
+}
+
+.button-toggle-wrapper {
+  display: flex;
+}
+
+.banner__big-button {
+  margin-bottom: 35px;
+}

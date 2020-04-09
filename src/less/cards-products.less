@@ -1,0 +1,251 @@
+
+
+.cards-products {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+
+  box-sizing: border-box;
+  width: 263px;
+  height: 450px;
+  padding-bottom: 15px;
+
+
+  border: 1px solid #efefef;
+  border-radius: 3px;
+
+  box-shadow: 0 5px 15px -10px #000000;
+
+  &--bestsellers {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-left: 27px;
+    padding-bottom: 20px;
+
+    background-image: url("../img/background-bestsellers.png"),
+            radial-gradient(#3dc3f2, #0288c1 );
+    background-repeat: no-repeat;
+    background-position: 20px 110px ,center;
+
+    border: none;
+  }
+  &--stock {
+    background-image:
+    url("../img/background-stok.png"),
+    url("../img/30.svg"),
+    radial-gradient(#3dc3f2, #0288c1 );
+    background-repeat: no-repeat;
+    background-position: 140px 0px ,center 220px ,center;
+
+  }
+}
+
+.cards-products__title {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-family: @fontExtrabold;
+  font-size: 33px;
+  color: #ffffff;
+  letter-spacing: 0.8px;
+}
+
+.cards-products__text {
+  margin: 0;
+  width: 100%;
+
+  font-family: @fontSemiBold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #4cd2fe;
+  letter-spacing: 0.55px;
+}
+
+.cards-products__cost {
+  margin-top: auto;
+
+  font-family: @fontRegular;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.cards-products__img {
+  width: 100%;
+  height: 255px;
+
+  &--card-1 {
+    background-image: url("../img/card-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--card-2 {
+    background-image: url("../img/card-2.png");
+    background-repeat: no-repeat;
+    background-position: 30px, bottom;
+
+  }
+
+  &--card-3 {
+    background-image: url("../img/card-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  &--card-4 {
+    background-image: url("../img/card-4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--card-5 {
+    background-image: url("../img/card-5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--card-6 {
+    background-image: url("../img/card-6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+}
+
+.cards-products__hit {
+  position: absolute;
+  top: 40px;
+  left: 0;
+
+  display: block;
+  padding: 12px 17px ;
+
+  font-family: @fontExtrabold;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+
+  border-radius: 3px;
+
+  background-image: linear-gradient(to right, #33b9e9, #098fc7);
+}
+.cards-products__hit--card-4,
+.cards-products__hit--card-5,
+.cards-products__hit--card-6 {
+  display: none;
+}
+
+.cards-products__discount {
+  position: absolute;
+  top:0;
+  left: 0;
+
+  display: none;
+  padding: 12px 15px ;
+
+  font-family: @fontExtrabold;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+
+  border-radius: 3px;
+
+  background-color: #00963f;
+}
+
+.cards-products__discount--card-2,
+.cards-products__discount--card-5 {
+  display: block;
+}
+
+.cards-products__rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.cards-products__stars-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+}
+
+.cards-products__star {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+
+  background-image: url("../img/star-1.png");
+
+  &:hover {
+    background-image: url("../img/star.png");
+  }
+}
+
+.cards-products__favorites {
+  display: block;
+
+  width: 24px;
+  height: 21px;
+
+  background-image: url("../img/valentines-heart.png");
+}
+
+.cards-products__name {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 15px;
+
+  font-family: @fontSemiBold;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
+
+.cards-products__prise {
+  display: inline-block;
+  padding-left: 15px;
+
+  font-family: @fontExtrabold;
+  font-size: 18px;
+  letter-spacing: 0.45px;
+}
+
+.cards-products__old-price {
+  display: inline-block;
+  margin-left: 15px;
+
+  font-family: @fontSemiBold;
+  font-size: 14px;
+  color: #6d6d6d;
+  text-decoration: line-through;
+}
+
+.cards-products__benefit {
+  margin: 0;
+  padding-left: 15px;
+
+  font-family: @fontSemiBold;
+  font-size: 12px;
+  color: #00963f;
+
+}
+
+.cards-products__button {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+

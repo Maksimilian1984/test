@@ -1,0 +1,155 @@
+
+.news__header {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 62px;
+}
+
+.news__title {
+  margin: 0;
+  align-self: flex-end;
+
+  font-family: @fontExtrabold;
+  font-size: 36px;
+  line-height: 20px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.news__header-link {
+  align-self: flex-end;
+  margin-left: 30px;
+
+  font-family: @fontBold;
+  font-size: 11px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: #009ee2;
+  text-decoration: underline;
+}
+
+.news__toggle-wrapper {
+  margin-left: auto;
+  align-self: center;
+}
+
+.news__toggle {
+  position: relative;
+
+  width: 25px;
+  height: 25px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #1d1e1e;
+
+  &:before {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-6px, -4px) rotate(45deg);
+
+    display: block;
+    content: "";
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+
+    border: 2px solid #ffffff;
+    border-bottom: none;
+    border-left: none;
+
+  }
+
+  &--back {
+
+    transform: rotate(-180deg);
+  }
+}
+.news__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+.news__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 360px;
+  padding-bottom: 20px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 5px 15px -10px #000000;
+}
+
+.news__img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.news__date {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  padding: 12px 14px;
+
+  font-family: @fontSemiBold;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.35px;
+  color: #ffffff;
+
+  background-color: #1d1e1e;
+
+  border-radius: 3px;
+}
+
+.news__item-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  font-family: @fontExtrabold;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.news__text {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 35px;
+
+  font-family: @fontSemiBold;
+  font-size: 13px;
+  line-height: 22px;
+
+  opacity: 0.6;
+}
+
+.news__link {
+  margin-top: auto;
+  padding-left: 20px;
+
+  font-family: @fontBold;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #009ee2;
+  text-decoration: underline;
+}
+
+
+
+.news__list-wrapper {
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff 209px, #efefef 209px, #efefef);
+}
